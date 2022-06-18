@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var minuteLabel: UILabel!
     @IBOutlet weak var hourLabel: UILabel!
     
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
     
     var hours: String = "00"
     var minutes: String = "00"
@@ -39,18 +42,25 @@ class ViewController: UIViewController {
         secondLabel.text = seconds
         minuteLabel.text = minutes
         hourLabel.text = hours
+        playButton.isEnabled = true
+        pauseButton.isEnabled = true
+        
         
     }
     
     //MARK: Pause button action
     @IBAction func pauseButton(_ sender: UIButton) {
         timer.invalidate()
+        pauseButton.isEnabled = false
+        playButton.isEnabled = true
         
     }
     
     //MARK: Play button action
     @IBAction func playButton(_ sender: UIButton) {
         timer = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(makeStep), userInfo: nil, repeats: true)
+        pauseButton.isEnabled = true
+        playButton.isEnabled = false
     }
     
     @objc func makeStep(){

@@ -150,7 +150,10 @@
                     <connections>
                         <outlet property="hourLabel" destination="pdg-0M-mjv" id="RDp-xv-SFK"/>
                         <outlet property="minuteLabel" destination="Dm5-n2-hcc" id="hnj-s8-RdA"/>
+                        <outlet property="pauseButton" destination="qk0-sT-yMX" id="btR-YD-x68"/>
+                        <outlet property="playButton" destination="mBk-e8-bta" id="3PZ-gk-SEa"/>
                         <outlet property="secondLabel" destination="yE4-lT-X6P" id="Us5-PQ-PbT"/>
+                        <outlet property="stopButton" destination="kNR-F8-Q3S" id="5ID-4t-YJT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

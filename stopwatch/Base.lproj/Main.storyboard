@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stopwatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EaN-l1-x6L">
+                                <rect key="frame" x="167" y="64.5" width="80" height="79"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="27P-xa-OKu"/>
+                                    <constraint firstAttribute="width" constant="80" id="dus-gN-Rh3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dm5-n2-hcc">
+                                <rect key="frame" x="157" y="413" width="100" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Qu7-Fm-1GJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="gcS-RS-MH9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1a-BH-WEJ">
+                                <rect key="frame" x="127" y="408" width="20" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Txv-Fl-dKH"/>
+                                    <constraint firstAttribute="height" constant="80" id="zDc-eT-rhh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmp-lX-oGm">
+                                <rect key="frame" x="267" y="413" width="20" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="em9-TT-y0F"/>
+                                    <constraint firstAttribute="height" constant="70" id="uAa-EU-JDk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-0M-mjv">
+                                <rect key="frame" x="17" y="413" width="100" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Tdf-2Q-osU"/>
+                                    <constraint firstAttribute="height" constant="70" id="lv3-PJ-MGf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE4-lT-X6P">
+                                <rect key="frame" x="297" y="413" width="100" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Fn6-pD-DT5"/>
+                                    <constraint firstAttribute="width" constant="100" id="Voz-Xp-Pmp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qk0-sT-yMX">
+                                <rect key="frame" x="157" y="732" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9Wc-cs-Xif"/>
+                                    <constraint firstAttribute="width" constant="100" id="ByE-0U-VDU"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="pause.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cdb-ON-kSw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNR-F8-Q3S">
+                                <rect key="frame" x="27" y="732" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GK5-sy-c3v"/>
+                                    <constraint firstAttribute="height" constant="100" id="zR5-VE-J2P"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="stop.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXl-Pd-zSc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBk-e8-bta">
+                                <rect key="frame" x="287" y="732" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AX6-Rq-Yjn"/>
+                                    <constraint firstAttribute="height" constant="100" id="adT-c1-6lV"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="play.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUA-Ym-osy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dm5-n2-hcc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Dr-h3-rwd"/>
+                            <constraint firstItem="EaN-l1-x6L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Y1-Hn-Zxo"/>
+                            <constraint firstItem="pdg-0M-mjv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BLX-tv-QCP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kNR-F8-Q3S" secondAttribute="bottom" constant="30" id="F5P-R8-VdT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qk0-sT-yMX" secondAttribute="bottom" constant="30" id="Gqw-9L-5hg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mBk-e8-bta" secondAttribute="bottom" constant="30" id="Hjk-KD-9NQ"/>
+                            <constraint firstItem="Dm5-n2-hcc" firstAttribute="leading" secondItem="c1a-BH-WEJ" secondAttribute="trailing" constant="10" id="LMk-aM-Nug"/>
+                            <constraint firstItem="qk0-sT-yMX" firstAttribute="leading" secondItem="kNR-F8-Q3S" secondAttribute="trailing" constant="30" id="SY2-d6-wlq"/>
+                            <constraint firstItem="EaN-l1-x6L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="URL-2P-4yE"/>
+                            <constraint firstItem="bmp-lX-oGm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cUe-XH-HQ4"/>
+                            <constraint firstItem="c1a-BH-WEJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eij-a4-WgP"/>
+                            <constraint firstItem="mBk-e8-bta" firstAttribute="leading" secondItem="qk0-sT-yMX" secondAttribute="trailing" constant="30" id="gNB-8j-IM3"/>
+                            <constraint firstItem="bmp-lX-oGm" firstAttribute="leading" secondItem="Dm5-n2-hcc" secondAttribute="trailing" constant="10" id="lGN-ON-RJH"/>
+                            <constraint firstItem="c1a-BH-WEJ" firstAttribute="leading" secondItem="pdg-0M-mjv" secondAttribute="trailing" constant="10" id="lZ9-Uv-HPd"/>
+                            <constraint firstItem="qk0-sT-yMX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q58-gv-VKy"/>
+                            <constraint firstItem="yE4-lT-X6P" firstAttribute="leading" secondItem="bmp-lX-oGm" secondAttribute="trailing" constant="10" id="qYg-Jk-yej"/>
+                            <constraint firstItem="Dm5-n2-hcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSp-VP-Zs6"/>
+                            <constraint firstItem="yE4-lT-X6P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yrP-yx-Wot"/>
+                            <constraint firstItem="Dm5-n2-hcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yxi-5I-X1B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hourLabel" destination="pdg-0M-mjv" id="RDp-xv-SFK"/>
+                        <outlet property="minuteLabel" destination="Dm5-n2-hcc" id="hnj-s8-RdA"/>
+                        <outlet property="secondLabel" destination="yE4-lT-X6P" id="Us5-PQ-PbT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause.fill" catalog="system" width="116" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

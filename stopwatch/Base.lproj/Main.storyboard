@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -122,37 +123,66 @@
                                     <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUA-Ym-osy"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MFk-fR-2Wh">
+                                <rect key="frame" x="67" y="164" width="280" height="41"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NVG-9q-VWh"/>
+                                    <constraint firstAttribute="width" constant="280" id="cqg-Jr-cqq"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="StopWatch"/>
+                                    <segment title="Timer"/>
+                                </segments>
+                                <connections>
+                                    <action selector="SegmentedTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="y4Z-o6-fBc"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="I67-dO-qm2">
+                                <rect key="frame" x="38" y="224" width="338" height="31"/>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="pA4-5T-9ue"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dm5-n2-hcc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Dr-h3-rwd"/>
+                            <constraint firstItem="I67-dO-qm2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="41N-Qg-2qm"/>
                             <constraint firstItem="EaN-l1-x6L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Y1-Hn-Zxo"/>
                             <constraint firstItem="pdg-0M-mjv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BLX-tv-QCP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kNR-F8-Q3S" secondAttribute="bottom" constant="30" id="F5P-R8-VdT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qk0-sT-yMX" secondAttribute="bottom" constant="30" id="Gqw-9L-5hg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mBk-e8-bta" secondAttribute="bottom" constant="30" id="Hjk-KD-9NQ"/>
                             <constraint firstItem="Dm5-n2-hcc" firstAttribute="leading" secondItem="c1a-BH-WEJ" secondAttribute="trailing" constant="10" id="LMk-aM-Nug"/>
+                            <constraint firstItem="I67-dO-qm2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="S4Z-rw-9EV"/>
                             <constraint firstItem="qk0-sT-yMX" firstAttribute="leading" secondItem="kNR-F8-Q3S" secondAttribute="trailing" constant="30" id="SY2-d6-wlq"/>
                             <constraint firstItem="EaN-l1-x6L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="URL-2P-4yE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I67-dO-qm2" secondAttribute="trailing" constant="40" id="X4Y-CT-wAy"/>
                             <constraint firstItem="bmp-lX-oGm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cUe-XH-HQ4"/>
                             <constraint firstItem="c1a-BH-WEJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eij-a4-WgP"/>
                             <constraint firstItem="mBk-e8-bta" firstAttribute="leading" secondItem="qk0-sT-yMX" secondAttribute="trailing" constant="30" id="gNB-8j-IM3"/>
+                            <constraint firstItem="MFk-fR-2Wh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kEZ-d4-AGV"/>
                             <constraint firstItem="bmp-lX-oGm" firstAttribute="leading" secondItem="Dm5-n2-hcc" secondAttribute="trailing" constant="10" id="lGN-ON-RJH"/>
                             <constraint firstItem="c1a-BH-WEJ" firstAttribute="leading" secondItem="pdg-0M-mjv" secondAttribute="trailing" constant="10" id="lZ9-Uv-HPd"/>
+                            <constraint firstItem="MFk-fR-2Wh" firstAttribute="top" secondItem="EaN-l1-x6L" secondAttribute="bottom" constant="20" id="o4H-Tm-KuR"/>
                             <constraint firstItem="qk0-sT-yMX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q58-gv-VKy"/>
                             <constraint firstItem="yE4-lT-X6P" firstAttribute="leading" secondItem="bmp-lX-oGm" secondAttribute="trailing" constant="10" id="qYg-Jk-yej"/>
+                            <constraint firstItem="I67-dO-qm2" firstAttribute="top" secondItem="MFk-fR-2Wh" secondAttribute="bottom" constant="20" id="rZ7-Wo-EIB"/>
                             <constraint firstItem="Dm5-n2-hcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSp-VP-Zs6"/>
                             <constraint firstItem="yE4-lT-X6P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yrP-yx-Wot"/>
                             <constraint firstItem="Dm5-n2-hcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yxi-5I-X1B"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="SegView" destination="MFk-fR-2Wh" id="Wt2-kM-fn4"/>
                         <outlet property="hourLabel" destination="pdg-0M-mjv" id="RDp-xv-SFK"/>
                         <outlet property="minuteLabel" destination="Dm5-n2-hcc" id="hnj-s8-RdA"/>
                         <outlet property="pauseButton" destination="qk0-sT-yMX" id="btR-YD-x68"/>
                         <outlet property="playButton" destination="mBk-e8-bta" id="3PZ-gk-SEa"/>
                         <outlet property="secondLabel" destination="yE4-lT-X6P" id="Us5-PQ-PbT"/>
+                        <outlet property="sliderTime" destination="I67-dO-qm2" id="uZd-La-VP2"/>
                         <outlet property="stopButton" destination="kNR-F8-Q3S" id="5ID-4t-YJT"/>
                     </connections>
                 </viewController>
@@ -166,5 +196,8 @@
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="stop.fill" catalog="system" width="128" height="113"/>
         <image name="timer" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
